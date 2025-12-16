@@ -91,7 +91,7 @@ const Historia = () => {
                 praticantes, monges e aqueles que resistiam às invasões e às mudanças políticas impostas pela nova dinastia.
               </p>
               <p className="text-lg leading-relaxed">
-                O Ving Tsun nasce dentro desse contexto de <strong className="text-secondary">resistência, simplicidade 
+                O Ving Tsun nasce dentro de um contexto marcado por <strong className="text-secondary">resistência, simplicidade 
                 e necessidade real de sobrevivência</strong>.
               </p>
             </div>
@@ -107,8 +107,8 @@ const Historia = () => {
               <div className="prose prose-lg prose-invert space-y-4 text-muted-foreground">
                 <p>
                   A lenda conta que, temendo a influência dos monges e seu envolvimento com movimentos revolucionários, 
-                  o governo Qing ordenou a destruição do Templo Shaolin. Guerreiros e tropas invadiram o local e 
-                  provocaram um grande incêndio, forçando a dispersão de muitos mestres que ali viviam.
+                  o governo Qing ordenou a destruição do Templo Shaolin. Tropas invadiram e incendiaram o local, 
+                  forçando a dispersão de muitos mestres que ali viviam.
                 </p>
                 <p>
                   Entre os poucos sobreviventes estava a monja budista <strong className="text-secondary">Ng Mui</strong>, 
@@ -144,9 +144,9 @@ const Historia = () => {
                 <ul className="grid md:grid-cols-2 gap-2 list-none pl-0">
                   <li className="flex items-center gap-2"><span className="text-secondary">•</span> Simplicidade</li>
                   <li className="flex items-center gap-2"><span className="text-secondary">•</span> Economia de energia</li>
-                  <li className="flex items-center gap-2"><span className="text-secondary">•</span> Linha central</li>
-                  <li className="flex items-center gap-2"><span className="text-secondary">•</span> Ataque direto e objetivo</li>
-                  <li className="flex items-center gap-2"><span className="text-secondary">•</span> Defesa simultânea</li>
+                  <li className="flex items-center gap-2"><span className="text-secondary">•</span> Uso da linha central</li>
+                  <li className="flex items-center gap-2"><span className="text-secondary">•</span> Objetividade nos movimentos</li>
+                  <li className="flex items-center gap-2"><span className="text-secondary">•</span> Defesa e ataque simultâneos</li>
                 </ul>
                 <p className="text-foreground">
                   E assim começou a desenvolver um novo sistema: um estilo eficiente, enxuto, acessível e estruturado, 
@@ -160,12 +160,12 @@ const Historia = () => {
               <h3 className="text-2xl font-bold text-foreground mb-6">O Encontro com Yim Ving Tsun</h3>
               <div className="prose prose-lg prose-invert space-y-4 text-muted-foreground">
                 <p>
-                  Durante sua jornada, Ng Mui conheceu uma jovem chamada <strong className="text-secondary">Yim Ving Tsun</strong>. 
-                  Yim Ving Tsun sofria ameaças constantes de um bandido local que queria forçá-la a se casar com ele.
+                  Durante sua jornada, Ng Mui conheceu <strong className="text-secondary">Yim Ving Tsun</strong>. 
+                  Uma jovem que ameaçada constantemente por um bandido local que queria forçá-la a casar.
                 </p>
                 <p>
-                  Sensível à situação e percebendo a determinação da jovem, Ng Mui decidiu ensiná-la o kung fu que havia 
-                  desenvolvido. A jovem aprendeu o estilo com dedicação e o utilizou para derrotar seu agressor, garantindo sua liberdade.
+                  Sensbilizada pela situação e percebendo a determinação da jovem, Ng Mui decidiu ensiná-la novo sistema de kung fu que havia 
+                  desenvolvido. A jovem aprendeu o estilo com dedicação e o utilizou para derrotar seu agressor e conquistar a sua liberdade.
                 </p>
                 <p>
                   No passar do tempo, Yim Ving Tsun transformou todo o conhecimento recebido em um sistema Marcial chamado 
@@ -373,7 +373,7 @@ const Historia = () => {
                 <div className="bg-card/50 p-6 rounded-xl">
                   <h4 className="font-bold text-foreground mb-4 flex items-center gap-2">
                     <Award className="w-5 h-5 text-secondary" />
-                    Ao Concluir, o Aluno Estará Apto a:
+                    Ao Concluir este módulo, o Aluno Estará Apto a:
                   </h4>
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li>• Compreender os fundamentos do Ving Tsun</li>

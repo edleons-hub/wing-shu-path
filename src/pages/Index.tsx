@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import Layout from '@/components/Layout';
 import heroImage from '@/assets/hero-training.jpg';
+import trainingImage from '@/assets/Treino_001.png';
 const Index = () => {
   const benefits = [{
     icon: Shield,
@@ -85,6 +86,7 @@ Ensinamos o Kung Fu  como um caminho completo de desenvolvimento físico, mental
         </div>
       </section>
 
+
       {/* About Preview Section */}
       <section id="sobre" className="py-24 px-4 bg-card/50">
         <div className="container mx-auto">
@@ -95,17 +97,24 @@ Ensinamos o Kung Fu  como um caminho completo de desenvolvimento físico, mental
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Nosso método une tradição, clareza e progressão, iniciando pelo <strong className="text-secondary">Programa 
-              Fundamental</strong> — 12 aulas teórico-práticas que apresentam os principais fundamentos do Ving Tsun, 
+              Fundamental</strong>, um módulo de 12 aulas teórico-práticas. Nele, o aluno aprende os principais fundamentos do Ving Tsun, 
               mantendo o conceito da linha central e os nomes tradicionais das técnicas em chinês no sistema tradicional.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Após essa base sólida, o aluno é convidado a seguir para o <strong className="text-secondary">Programa 
-              Tradicional</strong>, com os seis domínios clássicos: <em>Siu Nin Tao, Chum Kiu, Biu Je, Muy Faa Jong, 
+              Tradicional</strong>, que abrange os seis domínios clássicos: <em>Siu Nin Tao, Chum Kiu, Biu Je, Muy Faa Jong, 
               Luk Dim Bon Gwan e Bat Jaan Do</em>.
             </p>
           </div>
         </div>
       </section>
+
+      
+      <div className="container mx-auto mt-12">
+        <div className="max-w-4xl mx-auto">
+          <img src={trainingImage} alt="Treino de Kung Fu" className="w-full rounded-2xl shadow-lg object-cover" />
+        </div>
+      </div>
 
       {/* Benefits Grid */}
       <section className="py-24 px-4">

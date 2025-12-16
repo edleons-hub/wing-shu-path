@@ -153,7 +153,7 @@ const Aulas = () => {
                 </li>
                 <li className="flex items-center gap-2 text-muted-foreground">
                   <CheckCircle2 className="w-5 h-5 text-secondary flex-shrink-0" />
-                  Duração máxima: 3 meses
+                  Duração média: 3 meses
                 </li>
                 <li className="flex items-center gap-2 text-muted-foreground">
                   <CheckCircle2 className="w-5 h-5 text-secondary flex-shrink-0" />
