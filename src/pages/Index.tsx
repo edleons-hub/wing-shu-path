@@ -3,30 +3,41 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import Layout from '@/components/Layout';
 import heroImage from '@/assets/hero-training.jpg';
-
 const Index = () => {
-  const benefits = [
-    { icon: Shield, title: 'Tradição', desc: 'Linhagem autêntica do Ving Tsun' },
-    { icon: Brain, title: 'Mental', desc: 'Foco, clareza e disciplina' },
-    { icon: Heart, title: 'Emocional', desc: 'Equilíbrio e autoconfiança' },
-    { icon: Target, title: 'Técnica', desc: 'Precisão e eficiência' },
-    { icon: Users, title: 'Comunidade', desc: 'Família Kung Fu unida' },
-    { icon: Award, title: 'Excelência', desc: 'Desenvolvimento contínuo' },
-  ];
-
-  return (
-    <Layout>
+  const benefits = [{
+    icon: Shield,
+    title: 'Tradição',
+    desc: 'Linhagem autêntica do Ving Tsun'
+  }, {
+    icon: Brain,
+    title: 'Mental',
+    desc: 'Foco, clareza e disciplina'
+  }, {
+    icon: Heart,
+    title: 'Emocional',
+    desc: 'Equilíbrio e autoconfiança'
+  }, {
+    icon: Target,
+    title: 'Técnica',
+    desc: 'Precisão e eficiência'
+  }, {
+    icon: Users,
+    title: 'Comunidade',
+    desc: 'Família Kung Fu unida'
+  }, {
+    icon: Award,
+    title: 'Excelência',
+    desc: 'Desenvolvimento contínuo'
+  }];
+  return <Layout>
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden -mt-20">
-        <div
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage: `url(${heroImage})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundAttachment: 'fixed',
-          }}
-        >
+        <div className="absolute inset-0 z-0" style={{
+        backgroundImage: `url(${heroImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}>
           <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/80 to-background"></div>
         </div>
 
@@ -48,30 +59,18 @@ const Index = () => {
             </p>
             
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Bem-vindo à nossa escola de Ving Tsun Kung Fu no Méier. Aqui, o Kung Fu é ensinado como um 
-              caminho completo de desenvolvimento físico, mental e emocional, preservando a essência do 
-              sistema e sua lógica de combate inteligente.
+              Bem-vindo à nossa escola de Ving Tsun Kung Fu no Méier. 
+Ensinamos o Kung Fu  como um caminho completo de desenvolvimento físico, mental e emocional, preservando a essência do sistema e sua lógica de combate inteligente.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
-              <a 
-                href="https://wa.me/5521982112164?text=Olá! Gostaria de agendar uma aula experimental gratuita."
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button 
-                  size="lg"
-                  className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity text-lg px-10 py-7 glow-red w-full sm:w-auto"
-                >
+              <a href="https://wa.me/5521982112164?text=Olá! Gostaria de agendar uma aula experimental gratuita." target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity text-lg px-10 py-7 glow-red w-full sm:w-auto">
                   Aula Experimental Gratuita
                 </Button>
               </a>
               <Link to="/historia">
-                <Button 
-                  size="lg"
-                  variant="outline"
-                  className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground transition-all text-lg px-10 py-7 w-full sm:w-auto"
-                >
+                <Button size="lg" variant="outline" className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground transition-all text-lg px-10 py-7 w-full sm:w-auto">
                   Conheça Nossa História
                 </Button>
               </Link>
@@ -119,17 +118,13 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {benefits.map((benefit, index) => (
-              <div 
-                key={benefit.title}
-                className="p-8 bg-card rounded-2xl border border-border hover:border-secondary/50 transition-all duration-300 group hover:shadow-lg hover:shadow-primary/5 animate-fade-in"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
+            {benefits.map((benefit, index) => <div key={benefit.title} className="p-8 bg-card rounded-2xl border border-border hover:border-secondary/50 transition-all duration-300 group hover:shadow-lg hover:shadow-primary/5 animate-fade-in" style={{
+            animationDelay: `${index * 100}ms`
+          }}>
                 <benefit.icon className="w-12 h-12 text-secondary mb-4 group-hover:scale-110 transition-transform" />
                 <h3 className="text-xl font-bold text-foreground mb-2">{benefit.title}</h3>
                 <p className="text-muted-foreground">{benefit.desc}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -157,15 +152,8 @@ const Index = () => {
             <p className="text-lg text-muted-foreground">
               Agende uma aula experimental gratuita e vivencie o Ving Tsun na prática
             </p>
-            <a 
-              href="https://wa.me/5521982112164?text=Olá! Gostaria de agendar uma aula experimental gratuita."
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button 
-                size="lg"
-                className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity text-lg px-12 py-7 glow-red"
-              >
+            <a href="https://wa.me/5521982112164?text=Olá! Gostaria de agendar uma aula experimental gratuita." target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity text-lg px-12 py-7 glow-red">
                 Quero Iniciar Meu Treinamento
               </Button>
             </a>
@@ -175,8 +163,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default Index;
