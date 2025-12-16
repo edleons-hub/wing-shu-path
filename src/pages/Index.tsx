@@ -94,8 +94,7 @@ Ensinamos o Kung Fu  como um caminho completo de desenvolvimento físico, mental
               <span className="text-gradient-primary">Programa Fundamental</span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Nosso método une tradição, clareza e progressão, iniciando pelo <strong className="text-secondary">Programa 
-              Fundamental</strong> — 12 aulas teórico-práticas que apresentam os principais fundamentos do Ving Tsun, 
+              Nosso método une tradição, clareza e progressão, iniciando pelo <strong className="text-secondary">um módulo de 12 aulas teórico-práticas. Nele o aluno aprende os principais fundamentos do Ving Tsun, mantendo o conceito da linha central e os nomes tradicionais das técnicas em chinês no sistema tradicional.</strong> — 12 aulas teórico-práticas que apresentam os principais fundamentos do Ving Tsun, 
               mantendo o conceito da linha central e os nomes tradicionais das técnicas em chinês no sistema tradicional.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
