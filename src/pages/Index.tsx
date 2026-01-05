@@ -1,10 +1,26 @@
-import { ArrowDown, Shield, Brain, Heart, Target, Users, Award } from 'lucide-react';
+import * as React from 'react';
+import { ArrowDown, Shield, Brain, Heart, Target, Users, Award, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import Layout from '@/components/Layout';
+// simple internal carousel used only on this page
 import heroImage from '@/assets/hero-training.jpg';
+import heroImage1 from '@/assets/philosophy-section.jpg';
+import historyImage from '@/assets/history-section.jpg';
 import trainingImage from '@/assets/Treino_001.png';
 const Index = () => {
+  // manual carousel state: guarantees exact 15s per slide
+  const heroImages = [heroImage1, historyImage, heroImage];
+  const [currentSlide, setCurrentSlide] = React.useState(0);
+
+  React.useEffect(() => {
+    const id = setTimeout(() => {
+      setCurrentSlide((s) => (s + 1) % heroImages.length);
+    }, 15000);
+
+    return () => clearTimeout(id);
+  }, [currentSlide, heroImages.length]);
+
   const benefits = [{
     icon: Shield,
     title: 'Tradição',
@@ -30,23 +46,50 @@ const Index = () => {
     title: 'Excelência',
     desc: 'Desenvolvimento contínuo'
   }];
-  return <Layout>
+  
+
+  return (
+    <Layout>
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden -mt-20">
-        <div className="absolute inset-0 z-0" style={{
-        backgroundImage: `url(${heroImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
-      }}>
-          <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/80 to-background"></div>
-        </div>
+        {/* Carousel background (autoplay 15s) - manual implementation */}
+        {heroImages.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 z-0 transition-opacity duration-1000 ease-in-out ${
+              index === currentSlide ? 'opacity-100' : 'opacity-0'
+            }`}
+            style={{
+              backgroundImage: `url(${image})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          >
+            <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/80 to-background" />
+          </div>
+        ))}
+
+        {/* Prev / Next buttons */}
+        <button
+          onClick={() => setCurrentSlide((s) => (s - 1 + heroImages.length) % heroImages.length)}
+          className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-background/30 backdrop-blur-sm border border-secondary/30 text-secondary hover:bg-secondary/20 transition-all duration-300"
+          aria-label="Imagem anterior"
+        >
+          <ChevronLeft className="w-6 h-6" />
+        </button>
+        <button
+          onClick={() => setCurrentSlide((s) => (s + 1) % heroImages.length)}
+          className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-background/30 backdrop-blur-sm border border-secondary/30 text-secondary hover:bg-secondary/20 transition-all duration-300"
+          aria-label="Próxima imagem"
+        >
+          <ChevronRight className="w-6 h-6" />
+        </button>
 
         <div className="container mx-auto px-4 z-10 text-center pt-20">
           <div className="max-w-5xl mx-auto space-y-8 animate-fade-in">
             {/* Chinese Character */}
             <div className="text-8xl md:text-9xl font-black text-secondary/30 animate-pulse">
-              詠春
+              功夫
             </div>
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-black font-heading leading-tight">
@@ -172,6 +215,7 @@ Ensinamos o Kung Fu  como um caminho completo de desenvolvimento físico, mental
           </div>
         </div>
       </section>
-    </Layout>;
+    </Layout>
+  );
 };
 export default Index;

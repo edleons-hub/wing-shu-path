@@ -108,11 +108,11 @@ const Combate = () => {
             </h2>
             <div className="prose prose-lg prose-invert mx-auto text-muted-foreground space-y-6">
               <p>
-                O <strong className="text-secondary">Kung-Fu Combat</strong> será um programa exclusivo da nossa escola, 
+                O <strong className="text-secondary">Kung-Fu combate</strong> será um programa exclusivo da nossa escola, 
                 criado para quem deseja desenvolver habilidades de combate de forma segura, progressiva e estruturada.
               </p>
               <p>
-                Enquanto o Ving Tsun trabalha a lógica técnica, a sensibilidade e a estratégia, o Kung-Fu Combat será 
+                Enquanto o Ving Tsun trabalha a lógica técnica, a sensibilidade e a estratégia, o Kung-Fu combate será 
                 focado em <strong className="text-foreground">condicionamento, aplicação prática, movimentação de combate 
                 e adaptação realista</strong>, sempre com responsabilidade e dentro de um ambiente controlado.
               </p>
@@ -132,7 +132,7 @@ const Combate = () => {
             <h2 className="text-3xl md:text-4xl font-black font-heading">
               <span className="text-gradient-primary">Características Principais</span>
             </h2>
-            <p className="text-muted-foreground">O Kung-Fu Combat será baseado em três pilares fundamentais</p>
+            <p className="text-muted-foreground">O Kung-Fu combate será baseado em três pilares fundamentais</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -295,7 +295,7 @@ const Combate = () => {
                 Quer ser avisado antes de todos? Inscreva-se na lista de interesse e garanta prioridade no lançamento.
               </p>
               <a 
-                href="https://wa.me/5521982112164?text=Olá! Quero entrar na lista VIP do Kung-Fu Combat e ser avisado sobre o lançamento."
+                href="https://wa.me/5521982112164?text=Olá! Quero entrar na lista VIP do Kung-Fu Combate e ser avisado sobre o lançamento."
                 target="_blank"
                 rel="noopener noreferrer"
               >
