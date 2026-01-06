@@ -6,6 +6,7 @@ const Footer = () => {
     { href: '/', label: 'Início' },
     { href: '/sobre', label: 'Sobre Nós' },
     { href: '/historia', label: 'História' },
+    { href: '/kung-fu', label: 'KUNG FU' },
     { href: '/aulas', label: 'Aulas e Horários' },
     { href: '/eventos', label: 'Eventos' },
     { href: '/combate', label: 'Kung-Fu Combate' },
@@ -21,7 +22,7 @@ const Footer = () => {
           <div className="space-y-6">
             <div className="flex items-center gap-3">
               <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-                <span className="text-2xl font-black text-primary-foreground">梅</span>
+                <span className="text-2xl font-black text-primary-foreground">功夫</span>
               </div>
               <div>
                 <h3 className="text-xl font-black font-heading text-gradient-primary">VING TSUN</h3>

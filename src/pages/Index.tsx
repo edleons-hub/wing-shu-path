@@ -185,7 +185,7 @@ Ensinamos o Kung Fu  como um caminho completo de desenvolvimento físico, mental
       <section className="py-24 px-4 bg-gradient-to-br from-primary/10 to-secondary/10">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <div className="text-6xl text-secondary/30">梅</div>
+            <div className="text-6xl text-secondary/30">功夫</div>
             <blockquote className="text-2xl md:text-3xl font-heading italic text-foreground leading-relaxed">
               "Somos mais que uma escola de artes marciais: somos um espaço de crescimento humano, 
               onde cada praticante desenvolve foco, equilíbrio, resiliência e confiança — dentro e fora do tatame."

@@ -20,6 +20,7 @@ const Navigation = () => {
     { href: '/', label: 'Início' },
     { href: '/sobre', label: 'Sobre Nós' },
     { href: '/historia', label: 'História' },
+    { href: '/kung-fu', label: 'KUNG FU' },
     { href: '/aulas', label: 'Aulas' },
     { href: '/eventos', label: 'Eventos' },
     { href: '/combate', label: 'Combate' },
@@ -39,7 +40,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
             <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-              <span className="text-xl font-black text-primary-foreground">梅</span>
+              <span className="text-xl font-black text-primary-foreground">功夫</span>
             </div>
             <div className="flex flex-col">
               <span className="text-lg font-bold font-heading text-gradient-primary">VING TSUN</span>

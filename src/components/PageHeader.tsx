@@ -23,7 +23,7 @@ const PageHeader = ({ title, subtitle, backgroundImage }: PageHeaderProps) => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-6 animate-fade-in">
           <div className="inline-block mb-4">
-            <span className="text-6xl font-black text-secondary/20">梅</span>
+            <span className="text-6xl font-black text-secondary/20">功夫</span>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black font-heading">
             <span className="text-gradient-primary">{title}</span>

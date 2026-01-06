@@ -5,8 +5,8 @@ import { Button } from '@/components/ui/button';
 
 const Aulas = () => {
   const horarios = [
-    { dias: 'Segundas, Quartas ou Sextas', periodo: 'Manhã', horario: '9h às 10h' },
-    { dias: 'Segundas, Quartas ou Sextas', periodo: 'Noite', horario: '20h às 21h' },
+    { dias: 'Segundas, Quartas ou Sextas', periodo: 'Manhã', horario: '9:00 às 10:30' },
+    { dias: 'Segundas, Quartas ou Sextas', periodo: 'Noite', horario: '19:30 às 21:00' },
   ];
 
   const inclusos = [
