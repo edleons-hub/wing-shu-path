@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link, useLocation } from 'react-router-dom';
+import logoImg from '@/assets/moy-ke-yuek-logo.png';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -39,9 +40,15 @@ const Navigation = () => {
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-              <span className="text-xl font-black text-primary-foreground">功夫</span>
+            
+
+
+
+            <div className="w-12 h-12 rounded-full flex items-center justify-center overflow-hidden bg-card">
+              <img src={logoImg} alt="Moy Ke Yuek Logo" className="w-full h-full object-contain" />
             </div>
+
+
             <div className="flex flex-col">
               <span className="text-lg font-bold font-heading text-gradient-primary">VING TSUN</span>
               <span className="text-xs text-muted-foreground">Moy Ke Yuek</span>
