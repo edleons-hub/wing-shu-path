@@ -155,7 +155,7 @@ Ensinamos o Kung Fu  como um caminho completo de desenvolvimento físico, mental
       
       <div className="container mx-auto mt-12">
         <div className="max-w-4xl mx-auto">
-          <img src={capaimage} alt="Treino de Kung Fu" className="w-full rounded-2xl shadow-lg object-cover" />
+          <img src={capaimage} alt="Treino de Kung Fu" className="w-1/2 rounded-2xl shadow-lg object-cover mx-auto" />
         </div>
       </div>
 
