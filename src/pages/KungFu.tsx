@@ -3,6 +3,7 @@ import Layout from '@/components/Layout';
 import PageHeader from '@/components/PageHeader';
 import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { whatsappLink } from '@/lib/contact';
 
 const KungFu = () => {
   const caracteristicas = [
@@ -271,7 +272,7 @@ const KungFu = () => {
                   Tradicional</strong> e fazer parte da <strong className="text-secondary">família Kung Fu Moy Ke Yuek</strong>.
                 </p>
                 <a 
-                  href="https://wa.me/5521982112164?text=Olá! Gostaria de saber mais sobre o Programa Fundamental."
+                  href={whatsappLink('Olá! Gostaria de saber mais sobre o Programa Fundamental.')}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

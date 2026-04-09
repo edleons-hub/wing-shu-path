@@ -3,6 +3,7 @@ import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link, useLocation } from 'react-router-dom';
 import logoImg from '@/assets/moy-ke-yuek-logo.png';
+import { whatsappLink } from '@/lib/contact';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -74,7 +75,7 @@ const Navigation = () => {
               </Link>
             ))}
             <a 
-              href="https://wa.me/5521982112164?text=Olá! Gostaria de agendar uma aula experimental gratuita."
+              href={whatsappLink('Olá! Gostaria de agendar uma aula experimental gratuita.')}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -111,7 +112,7 @@ const Navigation = () => {
               </Link>
             ))}
             <a 
-              href="https://wa.me/5521982112164?text=Olá! Gostaria de agendar uma aula experimental gratuita."
+              href={whatsappLink('Olá! Gostaria de agendar uma aula experimental gratuita.')}
               target="_blank"
               rel="noopener noreferrer"
               className="block pt-2"

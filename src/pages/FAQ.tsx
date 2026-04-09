@@ -3,6 +3,7 @@ import Layout from '@/components/Layout';
 import PageHeader from '@/components/PageHeader';
 import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { whatsappLink } from '@/lib/contact';
 
 const FAQ = () => {
   const faqs = [
@@ -15,7 +16,7 @@ const FAQ = () => {
         },
         {
           pergunta: 'Qual a idade mínima para começar a treinar?',
-          resposta: 'Aceitamos alunos a partir de 14 anos. Para menores de idade, é necessário autorização dos pais ou responsáveis. O Ving Tsun é uma arte marcial que trabalha técnica e estratégia, sendo adequada para diferentes faixas etárias.',
+          resposta: 'Aceitamos alunos a partir de 18 anos. Para menores de idade, é necessário autorização dos pais ou responsáveis. O Ving Tsun é uma arte marcial que trabalha técnica e estratégia, sendo adequada para diferentes faixas etárias.',
         },
         {
           pergunta: 'Como funciona a aula experimental gratuita?',
@@ -95,7 +96,7 @@ const FAQ = () => {
         },
         {
           pergunta: 'A escola oferece workshops ou eventos especiais?',
-          resposta: 'Sim! Periodicamente realizamos workshops temáticos, seminários e encontros da família Kung Fu. Acompanhe nossas redes sociais (@vingtsunkungfuflow) ou entre na nossa lista de avisos para não perder nenhum evento.',
+          resposta: 'Sim! Periodicamente realizamos workshops temáticos, seminários e encontros da família Kung Fu. Acompanhe nossas redes sociais (@vingtsunkungfumeier) ou entre na nossa lista de avisos para não perder nenhum evento.',
         },
         {
           pergunta: 'Posso treinar se tiver alguma limitação física?',
@@ -162,7 +163,7 @@ const FAQ = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="https://wa.me/5521982112164?text=Olá! Tenho algumas dúvidas sobre as aulas de Ving Tsun."
+                href={whatsappLink('Olá! Tenho algumas dúvidas sobre as aulas de Ving Tsun.')}
                 target="_blank"
                 rel="noopener noreferrer"
               >

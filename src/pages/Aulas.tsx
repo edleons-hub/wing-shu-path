@@ -1,6 +1,7 @@
 import { Clock, Calendar, MapPin, CheckCircle2, Sparkles } from 'lucide-react';
 import Layout from '@/components/Layout';
 import PageHeader from '@/components/PageHeader';
+import { whatsappLink } from '@/lib/contact';
 import { Button } from '@/components/ui/button';
 
 const Aulas = () => {
@@ -104,7 +105,7 @@ const Aulas = () => {
               Sem compromisso, sem pressão — apenas uma experiência transformadora.
             </p>
             <a 
-              href="https://wa.me/5521982112164?text=Olá! Gostaria de agendar uma aula experimental gratuita."
+              href={whatsappLink('Olá! Gostaria de agendar uma aula experimental gratuita.')}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -165,7 +166,7 @@ const Aulas = () => {
                 <p className="text-4xl font-black text-gradient-primary">R$ 195<span className="text-lg text-muted-foreground">/mês</span></p>
               </div>
               <a 
-                href="https://wa.me/5521982112164?text=Olá! Gostaria de saber mais sobre o Programa Fundamental."
+                href={whatsappLink('Olá! Gostaria de saber mais sobre o Programa Fundamental.')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block"
@@ -211,7 +212,7 @@ const Aulas = () => {
                 <p className="text-2xl font-bold text-muted-foreground">Anunciados para lista VIP</p>
               </div>
               <a 
-                href="https://wa.me/5521982112164?text=Olá! Gostaria de entrar na lista VIP do Kung-Fu Combat."
+                href={whatsappLink('Olá! Gostaria de entrar na lista VIP do Kung-Fu Combat.')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block"

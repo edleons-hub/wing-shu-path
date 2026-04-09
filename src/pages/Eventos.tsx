@@ -2,6 +2,7 @@ import { Calendar, Clock, MapPin, ArrowRight } from 'lucide-react';
 import Layout from '@/components/Layout';
 import PageHeader from '@/components/PageHeader';
 import { Button } from '@/components/ui/button';
+import { whatsappLink } from '@/lib/contact';
 
 const Eventos = () => {
   const proximosEventos = [
@@ -116,7 +117,7 @@ const Eventos = () => {
               Quer ser avisado sobre os próximos eventos?
             </p>
             <a 
-              href="https://wa.me/5521982112164?text=Olá! Gostaria de ser avisado sobre os próximos eventos da escola."
+              href={whatsappLink('Olá! Gostaria de ser avisado sobre os próximos eventos da escola.')}
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -1,5 +1,7 @@
 import { MapPin, Phone, Mail, Instagram } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { whatsappLink } from '@/lib/contact';
+import logoImg from '@/assets/moy-ke-yuek-logo.png';
 
 const Footer = () => {
   const quickLinks = [
@@ -21,9 +23,21 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-6">
             <div className="flex items-center gap-3">
-              <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+              
+              
+              <div className="w-12 h-12 rounded-full flex items-center justify-center overflow-hidden bg-card">
+              <img src={logoImg} alt="Moy Ke Yuek Logo" className="w-full h-full object-contain" />
+            </div>
+              
+              
+              
+              
+              {/* <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
                 <span className="text-2xl font-black text-primary-foreground">功夫</span>
-              </div>
+              </div> */}
+              
+              
+              
               <div>
                 <h3 className="text-xl font-black font-heading text-gradient-primary">VING TSUN</h3>
                 <p className="text-sm text-muted-foreground">Família Moy Ke Yuek</p>
@@ -51,13 +65,13 @@ const Footer = () => {
                 <span>Rua Dias da Cruz, 148 – Sala 303<br />Méier – Rio de Janeiro, RJ</span>
               </a>
               <a 
-                href="https://wa.me/5521982112164" 
+                href={whatsappLink()}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-muted-foreground hover:text-secondary transition-colors"
               >
                 <Phone size={20} />
-                <span>(21) 98211-2164</span>
+                <span>(21) 97153-5576</span>
               </a>
               <a 
                 href="mailto:cristianogoldmanijc@gmail.com" 
@@ -100,7 +114,7 @@ const Footer = () => {
             </div>
             <div className="pt-4">
               <a 
-                href="https://wa.me/5521982112164?text=Olá! Gostaria de agendar uma aula experimental gratuita."
+                href={whatsappLink('Olá! Gostaria de agendar uma aula experimental gratuita.')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block w-full text-center py-3 px-6 bg-gradient-to-r from-primary to-secondary rounded-lg font-semibold hover:opacity-90 transition-opacity"

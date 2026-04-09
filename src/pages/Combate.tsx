@@ -2,6 +2,8 @@ import { Zap, Target, Shield, Brain, Heart, Trophy, Timer, Users, ArrowRight, Ch
 import Layout from '@/components/Layout';
 import PageHeader from '@/components/PageHeader';
 import { Button } from '@/components/ui/button';
+import { whatsappLink } from '@/lib/contact';
+import logoCombate from '@/assets/logocombate.jpeg';
 
 const Combate = () => {
   const pilares = [
@@ -262,7 +264,11 @@ const Combate = () => {
       <section className="py-24 px-4">
         <div className="container mx-auto">
           <div className="max-w-3xl mx-auto text-center space-y-8 bg-gradient-to-br from-primary/20 to-secondary/20 p-12 rounded-3xl border border-secondary/30">
-            <div className="text-6xl">🥋</div>
+            <img
+              src={logoCombate}
+              alt="Logo Combate"
+              className="mx-auto w-1/2 max-w-[220px] h-auto"
+            />
             <h2 className="text-3xl md:text-4xl font-black font-heading">
               Prepare-se para o <span className="text-gradient-primary">Próximo Nível</span>
             </h2>
@@ -295,7 +301,7 @@ const Combate = () => {
                 Quer ser avisado antes de todos? Inscreva-se na lista de interesse e garanta prioridade no lançamento.
               </p>
               <a 
-                href="https://wa.me/5521982112164?text=Olá! Quero entrar na lista VIP do Kung-Fu Combate e ser avisado sobre o lançamento."
+                href={whatsappLink('Olá! Quero entrar na lista VIP do Kung-Fu Combate e ser avisado sobre o lançamento.')}
                 target="_blank"
                 rel="noopener noreferrer"
               >

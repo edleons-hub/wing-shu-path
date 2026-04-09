@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { MapPin, Phone, Mail, Instagram, Send, Clock, MessageCircle } from 'lucide-react';
 import Layout from '@/components/Layout';
+import { whatsappLink, telephoneLink } from '@/lib/contact';
 import PageHeader from '@/components/PageHeader';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -30,7 +31,7 @@ const Contato = () => {
 
     // Redirecionar para WhatsApp com a mensagem
     const message = `Olá! Meu nome é ${formData.nome}.%0A%0AEmail: ${formData.email}%0ATelefone: ${formData.telefone}%0A%0AMensagem: ${formData.mensagem}`;
-    window.open(`https://wa.me/5521982112164?text=${message}`, '_blank');
+    window.open(`https://wa.me/5521971535576?text=${message}`, '_blank');
 
     toast({
       title: "Mensagem enviada!",
@@ -85,7 +86,7 @@ const Contato = () => {
 
                 {/* WhatsApp */}
                 <a 
-                  href="https://wa.me/5521982112164"
+                  href={whatsappLink()}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-start gap-4 p-6 bg-card rounded-xl border border-border hover:border-green-500/50 transition-all group cursor-pointer"
@@ -95,14 +96,14 @@ const Contato = () => {
                   </div>
                   <div>
                     <h3 className="font-bold text-foreground mb-1">WhatsApp</h3>
-                    <p className="text-muted-foreground">(21) 98211-2164</p>
+                    <p className="text-muted-foreground">(21) 97153-5576</p>
                     <p className="text-green-500 text-sm mt-1">Clique para enviar mensagem</p>
                   </div>
                 </a>
 
                 {/* Telefone */}
                 <a 
-                  href="tel:+5521982112164"
+                  href={telephoneLink}
                   className="flex items-start gap-4 p-6 bg-card rounded-xl border border-border hover:border-secondary/50 transition-all"
                 >
                   <div className="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0">
@@ -110,7 +111,7 @@ const Contato = () => {
                   </div>
                   <div>
                     <h3 className="font-bold text-foreground mb-1">Telefone</h3>
-                    <p className="text-muted-foreground">(21) 98211-2164</p>
+                    <p className="text-muted-foreground">(21) 97153-5576</p>
                   </div>
                 </a>
 
@@ -284,7 +285,7 @@ const Contato = () => {
               Clique abaixo e fale diretamente com o Mestre Cristiano Goldman
             </p>
             <a 
-              href="https://wa.me/5521982112164?text=Olá! Quero iniciar meu treinamento de Ving Tsun."
+              href={whatsappLink('Olá! Quero iniciar meu treinamento de Ving Tsun.')}
               target="_blank"
               rel="noopener noreferrer"
             >

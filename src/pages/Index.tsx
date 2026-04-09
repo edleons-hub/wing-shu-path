@@ -3,11 +3,12 @@ import { ArrowDown, Shield, Brain, Heart, Target, Users, Award, ChevronLeft, Che
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import Layout from '@/components/Layout';
+import { whatsappLink } from '@/lib/contact';
 // simple internal carousel used only on this page
 import heroImage from '@/assets/hero-training.jpg';
 import heroImage1 from '@/assets/philosophy-section.jpg';
 import historyImage from '@/assets/history-section.jpg';
-import trainingImage from '@/assets/Treino_001.png';
+import capaimage from '@/assets/Capa_001.jpeg';
 const Index = () => {
   // manual carousel state: guarantees exact 15s per slide
   const heroImages = [heroImage1, historyImage, heroImage];
@@ -108,7 +109,7 @@ Ensinamos o Kung Fu  como um caminho completo de desenvolvimento físico, mental
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
-              <a href="https://wa.me/5521982112164?text=Olá! Gostaria de agendar uma aula experimental gratuita." target="_blank" rel="noopener noreferrer">
+              <a href={whatsappLink('Olá! Gostaria de agendar uma aula experimental gratuita.')} target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity text-lg px-10 py-7 glow-red w-full sm:w-auto">
                   Aula Experimental Gratuita
                 </Button>
@@ -140,8 +141,7 @@ Ensinamos o Kung Fu  como um caminho completo de desenvolvimento físico, mental
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Nosso método une tradição, clareza e progressão, iniciando pelo <strong className="text-secondary">Programa 
-              Fundamental</strong>, um módulo de 12 aulas teórico-práticas. Nele, o aluno aprende os principais fundamentos do Ving Tsun, 
-              mantendo o conceito da linha central e os nomes tradicionais das técnicas em chinês no sistema tradicional.
+              Fundamental</strong>, um módulo de 12 aulas teórico-práticas. Nele, o aluno aprende os principais fundamentos do Ving Tsun e as práticas associadas.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Após essa base sólida, o aluno é convidado a seguir para o <strong className="text-secondary">Programa 
@@ -155,7 +155,7 @@ Ensinamos o Kung Fu  como um caminho completo de desenvolvimento físico, mental
       
       <div className="container mx-auto mt-12">
         <div className="max-w-4xl mx-auto">
-          <img src={trainingImage} alt="Treino de Kung Fu" className="w-full rounded-2xl shadow-lg object-cover" />
+          <img src={capaimage} alt="Treino de Kung Fu" className="w-full rounded-2xl shadow-lg object-cover" />
         </div>
       </div>
 
@@ -188,7 +188,7 @@ Ensinamos o Kung Fu  como um caminho completo de desenvolvimento físico, mental
             <div className="text-6xl text-secondary/30">詠春</div>
             <blockquote className="text-2xl md:text-3xl font-heading italic text-foreground leading-relaxed">
               "Somos mais que uma escola de artes marciais: somos um espaço de crescimento humano, 
-              onde cada praticante desenvolve foco, equilíbrio, resiliência e confiança — dentro e fora do tatame."
+              onde cada praticante desenvolve foco, equilíbrio, resiliência e confiança — dentro e fora do  local de treino."
             </blockquote>
           </div>
         </div>
@@ -204,7 +204,7 @@ Ensinamos o Kung Fu  como um caminho completo de desenvolvimento físico, mental
             <p className="text-lg text-muted-foreground">
               Agende uma aula experimental gratuita e vivencie o Ving Tsun na prática
             </p>
-            <a href="https://wa.me/5521982112164?text=Olá! Gostaria de agendar uma aula experimental gratuita." target="_blank" rel="noopener noreferrer">
+            <a href={whatsappLink('Olá! Gostaria de agendar uma aula experimental gratuita.')} target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity text-lg px-12 py-7 glow-red">
                 Quero Iniciar Meu Treinamento
               </Button>
