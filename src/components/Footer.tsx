@@ -104,7 +104,7 @@ const Footer = () => {
             <h4 className="text-lg font-bold text-foreground border-b border-secondary/30 pb-2">Redes Sociais</h4>
             <div className="flex gap-4">
               <a
-                href="https://instagram.com/vingtsunkungfuflow"
+                href="https://instagram.com/vingtsunkungfumeier"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-4 bg-muted rounded-xl hover:bg-gradient-to-br hover:from-primary hover:to-secondary transition-all group"

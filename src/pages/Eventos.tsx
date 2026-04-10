@@ -175,12 +175,12 @@ const Eventos = () => {
               Siga-nos no Instagram para acompanhar os treinos, eventos e conteúdos exclusivos da escola.
             </p>
             <a 
-              href="https://instagram.com/vingtsunkungfuflow"
+              href="https://instagram.com/vingtsunkungfumeier"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Button className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity">
-                @vingtsunkungfuflow
+                @vingtsunkungfumeier
               </Button>
             </a>
           </div>

@@ -131,7 +131,7 @@ const Contato = () => {
 
                 {/* Instagram */}
                 <a 
-                  href="https://instagram.com/vingtsunkungfuflow"
+                  href="https://instagram.com/vingtsunkungfumeier"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-start gap-4 p-6 bg-card rounded-xl border border-border hover:border-pink-500/50 transition-all group"
@@ -141,7 +141,7 @@ const Contato = () => {
                   </div>
                   <div>
                     <h3 className="font-bold text-foreground mb-1">Instagram</h3>
-                    <p className="text-muted-foreground">@vingtsunkungfuflow</p>
+                    <p className="text-muted-foreground">@vingtsunkungfumeier</p>
                   </div>
                 </a>
 
