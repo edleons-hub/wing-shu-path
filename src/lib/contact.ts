@@ -1,5 +1,5 @@
-export const WHATSAPP_NUMBER = '5521971534476';
-export const WHATSAPP_PHONE_NUMBER = '+5521971534476';
+export const WHATSAPP_NUMBER = '5521971534456';
+export const WHATSAPP_PHONE_NUMBER = '+5521971534456';
 export const WHATSAPP_BASE_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
 export const whatsappLink = (message?: string) =>
   message ? `${WHATSAPP_BASE_URL}?text=${encodeURIComponent(message)}` : WHATSAPP_BASE_URL;
