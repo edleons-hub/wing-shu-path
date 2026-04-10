@@ -71,7 +71,7 @@ const Footer = () => {
                 className="flex items-center gap-3 text-muted-foreground hover:text-secondary transition-colors"
               >
                 <Phone size={20} />
-                <span>(21) 97153-5576</span>
+                <span>(21) 97153-4476</span>
               </a>
               <a 
                 href="mailto:cristianogoldmanijc@gmail.com" 

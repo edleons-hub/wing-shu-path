@@ -31,7 +31,7 @@ const Contato = () => {
 
     // Redirecionar para WhatsApp com a mensagem
     const message = `Olá! Meu nome é ${formData.nome}.%0A%0AEmail: ${formData.email}%0ATelefone: ${formData.telefone}%0A%0AMensagem: ${formData.mensagem}`;
-    window.open(`https://wa.me/5521971535576?text=${message}`, '_blank');
+    window.open(`https://wa.me/5521971534476?text=${message}`, '_blank');
 
     toast({
       title: "Mensagem enviada!",
@@ -96,7 +96,7 @@ const Contato = () => {
                   </div>
                   <div>
                     <h3 className="font-bold text-foreground mb-1">WhatsApp</h3>
-                    <p className="text-muted-foreground">(21) 97153-5576</p>
+                    <p className="text-muted-foreground">(21) 97153-4476</p>
                     <p className="text-green-500 text-sm mt-1">Clique para enviar mensagem</p>
                   </div>
                 </a>
@@ -111,7 +111,7 @@ const Contato = () => {
                   </div>
                   <div>
                     <h3 className="font-bold text-foreground mb-1">Telefone</h3>
-                    <p className="text-muted-foreground">(21) 97153-5576</p>
+                    <p className="text-muted-foreground">(21) 97153-4476</p>
                   </div>
                 </a>
 
