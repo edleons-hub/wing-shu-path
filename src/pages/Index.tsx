@@ -204,11 +204,13 @@ Ensinamos o Kung Fu  como um caminho completo de desenvolvimento físico, mental
             <p className="text-lg text-muted-foreground">
               Agende uma aula experimental gratuita e vivencie o Ving Tsun na prática
             </p>
-            <a href={whatsappLink('Olá! Gostaria de agendar uma aula experimental gratuita.')} target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity text-lg px-12 py-7 glow-red">
-                Quero Iniciar Meu Treinamento
-              </Button>
-            </a>
+            <div className="flex justify-center">
+              <a href={whatsappLink('Olá! Gostaria de agendar uma aula experimental gratuita.')} target="_blank" rel="noopener noreferrer" className="inline-flex justify-center">
+                <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity text-lg px-5 py-7 glow-red mx-auto">
+                  Quero Iniciar Meu Treinamento
+                </Button>
+              </a>
+            </div>
             <p className="text-sm text-muted-foreground">
               Fale diretamente com o Mestre Cristiano Goldman
             </p>

@@ -291,7 +291,7 @@ const Contato = () => {
             >
               <Button 
                 size="lg"
-                className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity text-lg px-12 py-7 glow-red"
+                className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity text-lg px-5 py-7 glow-red"
               >
                 Quero Iniciar Meu Treinamento
               </Button>
