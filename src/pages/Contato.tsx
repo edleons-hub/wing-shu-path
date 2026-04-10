@@ -96,7 +96,7 @@ const Contato = () => {
                   </div>
                   <div>
                     <h3 className="font-bold text-foreground mb-1">WhatsApp</h3>
-                    <p className="text-muted-foreground">(21) 97153-4476</p>
+                    <p className="text-muted-foreground">(21) 97153-4456</p>
                     <p className="text-green-500 text-sm mt-1">Clique para enviar mensagem</p>
                   </div>
                 </a>
@@ -111,7 +111,7 @@ const Contato = () => {
                   </div>
                   <div>
                     <h3 className="font-bold text-foreground mb-1">Telefone</h3>
-                    <p className="text-muted-foreground">(21) 97153-4476</p>
+                    <p className="text-muted-foreground">(21) 97153-4456</p>
                   </div>
                 </a>
 

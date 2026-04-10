@@ -3,7 +3,7 @@ import { MessageCircle } from 'lucide-react';
 const WhatsAppButton = () => {
   return (
     <a
-      href="https://wa.me/5521971534476?text=Olá! Gostaria de saber mais sobre as aulas de Ving Tsun."
+      href="https://wa.me/5521971534456?text=Olá! Gostaria de saber mais sobre as aulas de Ving Tsun."
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 p-4 bg-green-500 hover:bg-green-600 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group animate-bounce hover:animate-none"
