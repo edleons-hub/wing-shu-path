@@ -6,7 +6,6 @@ import { Button } from '@/components/ui/button';
 
 const Aulas = () => {
   const horarios = [
-    { dias: 'Segundas, Quartas ou Sextas', periodo: 'Manhã', horario: '9:00 às 10:30' },
     { dias: 'Segundas, Quartas ou Sextas', periodo: 'Noite', horario: '19:30 às 21:00' },
   ];
 
@@ -31,19 +30,22 @@ const Aulas = () => {
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16 space-y-4">
-              <span className="text-secondary font-semibold text-sm uppercase tracking-widest">Horários</span>
-              <h2 className="text-3xl md:text-4xl font-black font-heading">
+              <span className="text-secondary font-semibold text-sm uppercase tracking-[0.2em]">Horários</span>
+              <h2 className="text-3xl md:text-4xl font-black font-heading leading-tight">
                 <span className="text-gradient-primary">Grade de Horários</span>
               </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto text-sm md:text-base">
+                Escolha a opção mais conveniente para você e comece sua evolução com disciplina, foco e técnica.
+              </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 mb-12">
+            <div className="max-w-xl w-full mx-auto mb-12 px-0 sm:px-2">
               {horarios.map((item, index) => (
                 <div 
                   key={index}
-                  className="p-8 bg-card rounded-2xl border border-border hover:border-secondary/50 transition-all group"
+                  className="p-6 sm:p-8 bg-card rounded-2xl border border-border hover:border-secondary/50 transition-all group shadow-sm shadow-secondary/5"
                 >
-                  <div className="flex items-center gap-4 mb-6">
+                  <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6 text-center sm:text-left">
                     <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center group-hover:scale-110 transition-transform">
                       <Clock className="w-7 h-7 text-primary-foreground" />
                     </div>
@@ -52,8 +54,8 @@ const Aulas = () => {
                       <p className="text-muted-foreground text-sm">{item.dias}</p>
                     </div>
                   </div>
-                  <div className="text-center py-6 bg-muted/50 rounded-xl">
-                    <p className="text-4xl font-black text-gradient-primary">{item.horario}</p>
+                  <div className="text-center py-8 bg-muted/50 rounded-xl border border-border/60">
+                    <p className="text-3xl sm:text-4xl font-black text-gradient-primary tracking-tight">{item.horario}</p>
                   </div>
                 </div>
               ))}

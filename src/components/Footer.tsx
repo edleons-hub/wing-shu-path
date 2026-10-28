@@ -11,7 +11,6 @@ const Footer = () => {
     { href: '/kung-fu', label: 'KUNG FU' },
     { href: '/aulas', label: 'Aulas e Horários' },
     { href: '/eventos', label: 'Eventos' },
-    { href: '/combate', label: 'Kung-Fu Combate' },
     { href: '/contato', label: 'Contato' },
     { href: '/faq', label: 'FAQ' },
   ];

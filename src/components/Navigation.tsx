@@ -25,7 +25,6 @@ const Navigation = () => {
     { href: '/kung-fu', label: 'KUNG FU' },
     { href: '/aulas', label: 'Aulas' },
     { href: '/eventos', label: 'Eventos' },
-    { href: '/combate', label: 'Combate' },
     { href: '/contato', label: 'Contato' },
     { href: '/faq', label: 'FAQ' },
   ];
